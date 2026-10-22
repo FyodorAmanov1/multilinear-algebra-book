@@ -1,0 +1,68 @@
+{
+  "medium": "Victorian pen-and-ink book illustration: fine wood-engraving crosshatching and stipple, black ink on pale warm ivory, expressive carefully drawn faces and hands. Professional illustration, coherent perspective, restrained vignette edges and clean margins. No CGI, modern cartoon style, gradients or flat vector art.",
+  "reference": "assets/story/character-reference.png",
+  "common_prompt": "Use case: illustration-story. Create one finished landscape 3:2 chapter-opening story illustration, high resolution, beautiful fine Victorian pen-and-ink wood-engraving crosshatching on warm pale ivory paper. Reference image 1 is the exact character model and drawing style, not the composition to reproduce. Match Alice's face, long wavy hair and dark ribbon, puff-sleeve dress, white pinafore, striped stockings, strapped shoes and child proportions exactly; preserve the named companion's face, silhouette and costume from the same reference. One coherent scene, convincing anatomy and perspective, clearly readable action, important props fully visible, graceful ink vignette dissolving into clean ivory margins. Publication-quality drawn craftsmanship, no CGI, modern cartoon, photo, panels, labels, equations, speech balloons, watermark, page numbers or typography. Use physical arrow props where appropriate, not technical diagrams.",
+  "scenes": [
+    {
+      "slug": "01-vectors",
+      "alt": "Alice looks up from her book as the White Rabbit hurries through a rainlit library.",
+      "scene": "Quiet Victorian Oxford library with tall wooden bookshelves and a rainy mullioned window. Alice sits at a large reading table with an open book, turning in surprise as the same small White Rabbit rushes past with pocket watch raised, check jacket and leather satchel fluttering. The narrow open door shows a glimpse of a fantastical garden with arrow-shaped flowers. Alice and Rabbit dominate. Library architectural detail, natural child anatomy, Rabbit correctly rabbit-sized.",
+      "generated_source": "C:/Users/Фёдор/.codex/generated_images/01a0f832-994f-7f53-bce8-8af22c81666a/exec-d2a355eb-e46a-450c-91fe-4a83669dc0d6.png"
+    },
+    {
+      "slug": "02-spaces",
+      "alt": "Alice studies two keys offered by the Cheshire Cat above a garden of curious doors.",
+      "scene": "Alice in a whimsical garden of ivy-framed doors with arrow-shaped keyholes. The reference's large round striped Cheshire Cat with broad grin, pointed ears and curling bushy tail perches on a low spreading tree branch, showing a ring with exactly two antique keys. Alice holds her single key and looks up thoughtfully. Doors recede in believable perspective, lovely botanical engraving detail."
+    },
+    {
+      "slug": "03-linear-maps",
+      "alt": "Alice watches the Mad Hatter feed an arrow into his elaborate brass tea machine.",
+      "scene": "Inside a ramshackle garden workshop, the reference Mad Hatter, with angular face, hooked nose, battered towering top hat, bow tie and frock coat, demonstrates a large Victorian brass machine to Alice. Funnel on left, levers, gears and pipes in middle, spout on right. He feeds a solid wooden arrow into the funnel and a longer arrow emerges from the spout. Alice watches attentively at the workbench. Tea utensils on shelves. Carefully drawn plausible mechanisms, no text on machine."
+    },
+    {
+      "slug": "04-inner-products",
+      "alt": "Alice holds two arrows while the Caterpillar offers a luminous measuring tape from his mushroom.",
+      "scene": "The reference Caterpillar sits upright on a large mushroom in a fantastical room formed by a curling smoke ring, holding an unnumbered measuring tape like a pale ribbon of moonlight. Alice stands beside him holding exactly two wooden arrows, one almost vertical, one leaning sideways, studying their angle. Caterpillar's heavy-lidded face, segmented body and small limbs match the reference. Graceful fern and mushroom detail, delicate smoke, convincing hands grasp arrow shafts."
+    },
+    {
+      "slug": "05-determinants",
+      "alt": "Alice and the Queen of Hearts examine a tilted square made from playing cards.",
+      "scene": "Royal chamber with floor of large playing cards. The exact stout Queen of Hearts from the reference, same imperious round face, crown, high ruff, heart-patterned gown and sceptre, directs Alice's experiment. Alice kneels beside a square panel of four cards with one corner tilted upward, the two faces distinguished by light and dark hatching. A modest lever mechanism can slide and tilt the panel. Rich architectural woodwork and tapestry, clear square panel, no equations or labels."
+    },
+    {
+      "slug": "06-eigenvectors",
+      "alt": "Alice and a sleepy Dormouse watch a cloud of arrows inside a teapot-shaped room.",
+      "scene": "Inside an enormous teapot-shaped room, Alice bends toward the reference's tiny sleepy Dormouse perched on a saucer at a table. A small Victorian mechanism moves solid wooden arrows in different directions. Two clear arrows stay straight along two distinct guide grooves on the tabletop, contrasting with arrows that turn. Curved wall, spout-shaped window and tea shelves establish the teapot room. Dormouse mouse-sized, soft ears and sleepy eyes match reference. Story scene, no coordinate chart."
+    },
+    {
+      "slug": "07-bilinear-forms",
+      "alt": "Alice watches the Duchess place an arrow in each pan of a kitchen balance.",
+      "scene": "The reference's elderly Duchess, same prominent nose and chin, tall elaborate bonnet, lace collar and dark textured gown, demonstrates a crafted two-pan balance in a peppery Victorian kitchen. Exactly one wooden arrow rests on each pan. A small blank output card emerges from a central slot in the pedestal. Alice watches across the table and reaches toward the mechanism. Fine scale chains, kitchen utensils, pepper pot, hearth, a little drifting pepper. Clear natural hands and plausible object placement."
+    },
+    {
+      "slug": "08-wedge-products",
+      "alt": "Alice receives an area ticket from a heart-card soldier in the Queen's corridor.",
+      "scene": "In a long royal corridor, the exact heart-card soldier from the reference, same slim human face, helmet, rectangular heart-card tabard, tights, pointed shoes and polearm, offers Alice a small paper ticket. Ticket shows two simple arrow strokes forming edges of a parallelogram, no words or numbers. Alice compares another ticket turned in her hands. Two matching distant soldiers may carry tickets down the corridor. Foreground Alice and soldier dominate, fine engraved architecture, no Queen needed."
+    },
+    {
+      "slug": "09-tensor-products",
+      "alt": "Alice counts spoons and cups beside the Mock Turtle's enormous combination table.",
+      "scene": "The reference's gentle sorrowful Mock Turtle, calf-like head with little horns and floppy ears, turtle shell, flippers and rounded feet, sits beside a broad wooden dining table in a garden pavilion. Alice counts exactly three separate spoons along one side and exactly four separate cups along the adjacent side, all clearly countable. Spacious otherwise uncluttered tabletop suggests pairing places without symbols or a grid. Turtle gestures gently with a flipper. Lovely wood grain, crockery and sympathetic interaction."
+    },
+    {
+      "slug": "10-components",
+      "alt": "Alice watches Humpty Dumpty arrange two costumes for the same little toy soldier.",
+      "scene": "The exact Humpty Dumpty from the reference, egg-shaped body, friendly adult face, cravat, waistcoat, short limbs and dark shoes, sits safely on a broad high wooden shelf. Below stands ONE small wooden toy soldier on a worktable. Humpty holds an alternative little coat while another costume is draped nearby, emphasizing clothing for the same unchanged toy. Alice lays a wooden arrow beside it and looks up at Humpty. Victorian dressing room with wardrobes, fabric folds and old shelving. No extra soldiers."
+    },
+    {
+      "slug": "11-applications",
+      "alt": "The White Rabbit opens his instrument bag while Alice prepares to take notes.",
+      "scene": "The identical reference White Rabbit, white fur, long ears, round spectacles, check jacket, dark waistcoat, watch chain and leather satchel, opens an instrument bag on a workroom table for Alice. Four clearly distinct props: small padded pressure block, saucer of tea leaves, teacup on a little spinning stand, stack of old photographs with indistinct silhouettes. Alice opens a notebook and holds a pencil. Rabbit gestures toward the instruments, scholarly Wonderland atmosphere, careful still-life drawing, no writing."
+    },
+    {
+      "slug": "12-forms",
+      "alt": "Alice and the White Rabbit examine maps covered with paths and small arrow markings.",
+      "scene": "At the end of a dreamlike corridor, Alice and the identical reference White Rabbit examine unfurled maps on a low table. Maps contain softly drawn winding paths, tiny directional arrows and outlined small patches, no words, numerals or coordinate chart. Alice traces a path with one finger, Rabbit points gently to a nearby patch. Beyond them a door opens to a quiet dawn garden, suggesting the end of their journey. Reflective faces, delicate architecture and restrained light and shadow."
+    }
+  ]
+}

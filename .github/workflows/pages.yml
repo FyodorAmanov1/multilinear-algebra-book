@@ -1,0 +1,56 @@
+﻿name: Publish the free book to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Set up GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Install book build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-extra texlive-fonts-recommended lmodern
+          python -m pip install -r requirements.txt
+      - name: Build the complete PDF and website
+        env:
+          MPLBACKEND: Agg
+          BOOK_SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          python scripts/build.py all
+          python scripts/build_pages.py
+      - name: Upload the book website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: build/public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

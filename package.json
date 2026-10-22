@@ -1,0 +1,10 @@
+﻿{
+  "name": "multilinear-algebra-book",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python scripts/build_pages.py",
+    "dev": "python scripts/serve.py --directory build/public",
+    "deploy": "git push"
+  }
+}

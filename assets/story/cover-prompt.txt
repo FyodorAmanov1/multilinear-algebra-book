@@ -1,0 +1,16 @@
+Use case: illustration-story
+Asset type: finished front cover for a welcoming mathematical storybook.
+Create a beautifully composed, professional Victorian illustrated book cover on warm ivory paper, portrait A4 proportions (width:height approximately 0.707), at the highest practical resolution. Flat front-cover artwork, not a photograph or 3D book mockup.
+Input image 1 is the CHARACTER MODEL and drawing-style reference: preserve Alice and the White Rabbit and Cheshire Cat exactly, including faces, clothes, proportions and details. Input image 2 is a STYLE reference only, not a composition to reproduce.
+Medium: refined nineteenth-century black pen-and-ink and wood-engraving drawing, exquisite fine crosshatching, expressive natural faces, delicate foliage and architectural detail. No digital vector look, no cartoon outlines, no glossy rendering.
+Composition: elegant restrained engraved border with botanical corners; spacious, beautifully typeset title area in the upper third; an enchanting original illustrated scene in the middle and lower half; clear author's name near the bottom. Alice, the SAME ten-year-old girl with long wavy hair, black ribbon, puff-sleeve dress, white pinafore, striped stockings and strapped shoes, explores a lovely ivy-covered garden doorway with the SAME spectacled White Rabbit in his checked jacket, waistcoat, watch chain and satchel. Rabbit graciously invites her onward. The SAME fluffy striped, round, smiling Cheshire Cat rests on a nearby branch. Through the arch, a gently winding path and a few whimsical physical arrow-shaped flowers suggest a friendly journey into mathematical Wonderland. An open old book and a small wooden parallelogram frame can rest subtly near their feet, linking the drawing to vectors and forms. The characters are distinct and anatomically natural; the cover feels curious, inviting and scholarly. Do not crowd the drawing. Maintain clear visual hierarchy, breathing room, and excellent contrast for all text.
+Typography: elegant classic Victorian book serif lettering, crisp and unmistakably readable, balanced and carefully centered, with the main subject largest and a restrained italic treatment for the subtitle. Render ONLY this exact book title, subtitle and author (line breaks may change, spelling and punctuation may not):
+Title: "An Introduction to Multilinear Algebra: The Intuitive Way"
+Suggested title stack:
+"An Introduction to"
+"Multilinear"
+"Algebra:"
+"The Intuitive Way"
+Subtitle: "A Wonderland Guide to Vectors, Tensors, and Forms"
+Author: "Fyodor Amanov"
+Keep subtitle visually smaller than the title but fully legible; author prominent and elegant below the illustration. No extra wording, labels, formulas, publisher logos, dates, watermarks, crop marks or spine. Entire ornamental border and all text inside generous safe margins. Warm ivory and near-black ink only, matching the chapter artwork.

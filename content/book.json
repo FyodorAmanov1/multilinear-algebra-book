@@ -1,0 +1,19 @@
+{
+  "title": "An Introduction to Multilinear Algebra: The Intuitive Way",
+  "subtitle": "A Wonderland Guide to Vectors, Tensors, and Forms",
+  "author": "Fyodor Amanov",
+  "year": "2026",
+  "base_path": "/multilinear-algebra-book/",
+  "base_url": "https://fyodoramanov1.github.io/multilinear-algebra-book/",
+  "repo_url": "https://github.com/FyodorAmanov1/multilinear-algebra-book",
+  "license": "CC BY-NC 4.0",
+  "description": "A friendly, illustrated, story-driven introduction to multilinear algebra for readers with high-school mathematics.",
+  "keywords": [
+    "multilinear algebra",
+    "tensors",
+    "linear algebra",
+    "intuition",
+    "Alice in Wonderland",
+    "interactive demos"
+  ]
+}

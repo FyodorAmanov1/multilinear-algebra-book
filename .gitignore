@@ -1,0 +1,48 @@
+build/
+dist/
+build.log
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+Thumbs.db
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.idx
+*.ind
+*.ilg
+*.log
+*.lot
+*.lof
+*.out
+*.toc
+*.synctex.gz
+*.synctex(busy)
+*.dvi
+*.ps
+
+# Generated local artifacts that are not part of the source
+assets/qr/
+site/chapters/
+site/demos/
+site/downloads/
+site/sitemap.xml
+
+# Payment secrets and local Cloudflare state
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.env
+.env.*
+!.env.example
+
+# Private reader exports
+.local/reader-exports/
+.local/github-publish/

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title$ — Interactive demo — __BOOK_TITLE__</title>
+  <meta name="description" content="$summary$">
+  <link rel="stylesheet" href="__BASE_PATH__assets/css/site.css">
+  <script defer src="__BASE_PATH__assets/js/site.js"></script>
+  <script defer src="__BASE_PATH__assets/js/demos.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="__BASE_PATH__">
+        <span class="brand-mark" aria-hidden="true"></span>
+        __BOOK_TITLE__
+      </a>
+      <div class="nav-links">
+        <a href="__BASE_PATH__chapters/">Chapters</a>
+        <a href="__BASE_PATH__demos/">Demos</a>
+        <a href="__BASE_PATH__glossary/">Glossary</a>
+        <a href="__BASE_PATH__answers/">Answers</a>
+        <a href="__BASE_PATH__downloads/book.pdf">Download</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="demo-main">
+    <section class="demo-shell">
+      <p class="eyebrow">Interactive demo</p>
+      <h1>$title$</h1>
+      <p class="demo-summary">$summary$</p>
+      <div class="demo-canvas-wrap">
+        <canvas id="$id$" width="720" height="520" aria-label="$summary$" role="img"></canvas>
+      </div>
+      <div class="demo-toolbar">
+        <button class="button ghost demo-play" type="button" aria-pressed="false">Play animation</button>
+        <span class="demo-state" aria-live="polite">Paused</span>
+      </div>
+      <div class="demo-controls">
+        $controls$
+      </div>
+      <p class="demo-hint">Use the sliders to explore. Keyboard users can tab to each control.</p>
+      <nav class="chapter-nav" aria-label="Demo">
+        <a class="button ghost" href="__BASE_PATH__chapters/$chapter-slug$/">Back to the chapter</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© __BOOK_YEAR__ __BOOK_AUTHOR__ · __BOOK_LICENSE__</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>__BOOK_TITLE__</title>
+  <meta name="description" content="__BOOK_DESCRIPTION__">
+  <meta name="author" content="__BOOK_AUTHOR__">
+  <link rel="stylesheet" href="__BASE_PATH__assets/css/site.css">
+  <script defer src="__BASE_PATH__assets/js/site.js"></script>
+  <script defer src="__BASE_PATH__assets/js/demos.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="__BASE_PATH__">
+        <span class="brand-mark" aria-hidden="true"></span>
+        __BOOK_TITLE__
+      </a>
+      <div class="nav-links">
+        <a href="__BASE_PATH__chapters/">Chapters</a>
+        <a href="__BASE_PATH__demos/">Demos</a>
+        <a href="__BASE_PATH__glossary/">Glossary</a>
+        <a href="__BASE_PATH__answers/">Answers</a>
+        <a href="__BASE_PATH__downloads/book.pdf">Download</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">An intuitive introduction</p>
+          <h1>__BOOK_TITLE__</h1>
+          <p class="tagline">__BOOK_SUBTITLE__</p>
+          <p class="tagline">A friendly, illustrated Wonderland walk through vectors, tensors, forms, and the ideas that make modern geometry tick.</p>
+          <div class="hero-actions">
+            <a class="button" href="__BASE_PATH__chapters/">Start reading</a>
+            <a class="button ghost" href="__BASE_PATH__downloads/book.pdf">Download the book</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <svg viewBox="0 0 400 300" role="img" aria-label="Abstract illustration of vectors and tensor grids">
+              <defs>
+                <linearGradient id="grid" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity=".15"/>
+                  <stop offset="100%" stop-color="#c9a227" stop-opacity=".10"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="300" fill="url(#grid)"/>
+              <g stroke="rgba(255,255,255,.35)" stroke-width="1">
+                <path d="M40 250 L360 250"/>
+                <path d="M40 50 L360 50"/>
+                <path d="M80 30 L80 270"/>
+                <path d="M320 30 L320 270"/>
+              </g>
+              <path d="M80 220 L300 90" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+              <path d="M80 220 L180 230" stroke="#c9a227" stroke-width="6" stroke-linecap="round"/>
+              <path d="M80 220 L90 110" stroke="#8fd3c6" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="80" cy="220" r="10" fill="#fff"/>
+              <circle cx="300" cy="90" r="7" fill="#c9a227"/>
+              <circle cx="180" cy="230" r="7" fill="#8fd3c6"/>
+              <circle cx="90" cy="110" r="7" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="hero-particles" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Read it like a story, learn it like mathematics</h2>
+      <p class="section-intro">Each chapter begins with a story, a question, and a picture. The formal ideas arrive only after the intuition has had time to settle.</p>
+      <div class="features">
+        <div class="feature">
+          <h3>Intuition first</h3>
+          <p>No wall of symbols before the idea has been explained in plain language.</p>
+        </div>
+        <div class="feature">
+          <h3>Interactive demos</h3>
+          <p>Every chapter has a live demo. Drag a slider and watch the geometry respond.</p>
+        </div>
+        <div class="feature">
+          <h3>Alice in Wonderland</h3>
+          <p>One continuous dream carries you from arrows to tensors, with no city map required.</p>
+        </div>
+        <div class="feature">
+          <h3>Real applications</h3>
+          <p>Stress tensors, diffusion, inertia, metric geometry, and data all make an appearance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>The chapters</h2>
+      <p class="section-intro">Twelve short walks from ordinary arrows to differential forms.</p>
+      <figure class="story-map-figure">
+        <img src="__BASE_PATH__assets/figures/story-map.svg" alt="A map of Alice’s twelve mathematical rooms, from arrows and keyrings to dream maps and differential forms.">
+        <figcaption>Alice’s twelve mathematical rooms</figcaption>
+      </figure>
+      <div class="chapter-grid">
+__CHAPTER_CARDS__
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© __BOOK_YEAR__ __BOOK_AUTHOR__ · __BOOK_LICENSE__</p>
+  </footer>
+</body>
+</html>

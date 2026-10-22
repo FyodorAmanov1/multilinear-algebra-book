@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title$ — __BOOK_TITLE__</title>
+  <meta name="description" content="$summary$">
+  <meta name="author" content="__BOOK_AUTHOR__">
+  <link rel="stylesheet" href="__BASE_PATH__assets/css/site.css">
+  <script defer src="__BASE_PATH__assets/js/site.js"></script>
+  <script defer src="__BASE_PATH__assets/js/demos.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="__BASE_PATH__">
+        <span class="brand-mark" aria-hidden="true"></span>
+        __BOOK_TITLE__
+      </a>
+      <div class="nav-links">
+        <a href="__BASE_PATH__chapters/">Chapters</a>
+        <a href="__BASE_PATH__demos/">Demos</a>
+        <a href="__BASE_PATH__glossary/">Glossary</a>
+        <a href="__BASE_PATH__answers/">Answers</a>
+        <a href="__BASE_PATH__downloads/book.pdf">Download</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="chapter-main">
+    <article class="chapter">
+      <p class="eyebrow">$part$</p>
+      <h1>$title$</h1>
+$if(story-image)$
+      <figure class="story-opening">
+        <img src="__BASE_PATH__$story-image$" alt="$story-alt$" width="1536" height="1024" decoding="async" fetchpriority="high">
+      </figure>
+$endif$
+      <p class="subtitle">$subtitle$</p>
+      $body$
+      <nav class="chapter-nav" aria-label="Chapter">
+        <a class="button ghost" href="__PREVIOUS_URL__">__PREVIOUS_LABEL__</a>
+        <a class="button ghost" href="__BASE_PATH__chapters/">All chapters</a>
+        <span class="chapter-progress" aria-live="polite">__CHAPTER_POSITION__</span>
+        <a class="button ghost" href="__NEXT_URL__">__NEXT_LABEL__</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© __BOOK_YEAR__ __BOOK_AUTHOR__ · __BOOK_LICENSE__</p>
+  </footer>
+</body>
+</html>

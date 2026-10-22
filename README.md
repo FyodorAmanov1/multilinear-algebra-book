@@ -41,8 +41,7 @@ python scripts/serve.py
 
 ## Free first book and the planned series
 
-The complete first book is free and openly accessible. No payment, account,
-email address, Cloudflare service, or Stripe integration is required. All twelve
+The complete first book is free and openly accessible. All twelve
 chapters, answers, interactive demos, and the complete PDF are hosted on
 **GitHub Pages**. The homepage introduces the planned series of story-based
 mathematics and science books; future volumes are intended to be paid releases.
@@ -57,8 +56,7 @@ and publishes it on pushes to `main` or `master`, using GitHub Pages as the
 repository's publishing source. The existing `content/book.json` supplies the
 website URL and repository path. See [FREE_BOOK_SETUP.md](FREE_BOOK_SETUP.md)
 for publication details and [LINKEDIN_LAUNCH.md](LINKEDIN_LAUNCH.md) for draft
-posts. Earlier payment and email backend experiments are inactive and are not
-included in the deployed static website.
+posts.
 
 ## Structure
 

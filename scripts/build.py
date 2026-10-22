@@ -116,33 +116,17 @@ def copy_assets(book: dict[str, Any]) -> None:
 
 
 def make_cover(book: dict[str, Any]) -> None:
-    fig = plt.figure(figsize=(8.5, 12.75), facecolor="#002147")
+    """Use the website's illustrated Alice cover as one full A4 PDF page."""
+    cover = ASSETS / "story" / "victorian-cover.png"
+    if not cover.is_file():
+        raise FileNotFoundError(f"Illustrated book cover is missing: {cover}")
+    fig = plt.figure(figsize=(210 / 25.4, 297 / 25.4), frameon=False)
     ax = fig.add_axes([0, 0, 1, 1])
-    ax.set_xlim(0, 10)
-    ax.set_ylim(0, 15)
-    ax.axis("off")
-
-    ax.fill_between([0, 10], [15, 15], [8.4, 9.1], color="#0f766e", alpha=.55)
-    ax.fill_between([0, 10], [8.4, 9.1], [0, 0], color="#002147")
-    for i in range(18):
-        x = i * .62
-        ax.plot([x, x + 3.2], [15, 6.5], color="#ffffff", alpha=.10, linewidth=1.4)
-
-    ax.add_patch(plt.Circle((8.1, 11.8), 1.35, facecolor="none", edgecolor="#c9a227", linewidth=7))
-    ax.add_patch(plt.Circle((2.2, 11.2), .95, facecolor="none", edgecolor="#ffffff", linewidth=4))
-    ax.plot([1.2, 5.2], [7.1, 9.6], color="#ffffff", linewidth=9, solid_capstyle="round")
-    ax.plot([1.2, 2.8], [7.1, 5.4], color="#c9a227", linewidth=8, solid_capstyle="round")
-    ax.plot([1.2, 3.4], [7.1, 7.4], color="#8fd3c6", linewidth=8, solid_capstyle="round")
-
-    ax.text(.7, 4.55, "An Introduction to", fontsize=21, color="#ffffff", va="center")
-    ax.text(.7, 3.65, "Multilinear Algebra", fontsize=38, color="#ffffff", weight="bold", va="center")
-    ax.text(.7, 2.85, "The Intuitive Way", fontsize=25, color="#c9a227", weight="bold", va="center")
-    ax.text(.7, 2.05, book["subtitle"], fontsize=16, color="#e8f0f6", va="center")
-    ax.text(.7, .75, book["author"], fontsize=17, color="#ffffff", va="center")
-
+    ax.imshow(plt.imread(cover), aspect="auto")
+    ax.set_axis_off()
     output_dir = BUILD / "book" / "assets" / "images"
     output_dir.mkdir(parents=True, exist_ok=True)
-    fig.savefig(output_dir / "cover.pdf", facecolor=fig.get_facecolor())
+    fig.savefig(output_dir / "cover.pdf", dpi=200, pad_inches=0)
     plt.close(fig)
 
 

@@ -8,6 +8,7 @@
 \usepackage{microtype}
 \usepackage{amsmath,amssymb,mathtools}
 \usepackage{graphicx}
+\usepackage{pdfpages}
 % Width and height are upper bounds for teaching diagrams, not stretch targets.
 \setkeys{Gin}{keepaspectratio}
 \usepackage{xcolor}
@@ -200,15 +201,9 @@
 
 \frontmatter
 \hypersetup{pageanchor=false}
-\maketitle
-
-\begin{center}
-\vspace{2em}
-\includegraphics[width=0.9\textwidth]{assets/images/cover.pdf}
-\vspace{2em}
-\end{center}
-
-\clearpage
+% A single illustrated cover, followed immediately by the contents.
+\includepdf[pages=1,pagecommand={\thispagestyle{empty}},width=\paperwidth,height=\paperheight,keepaspectratio]{assets/images/cover.pdf}
+\setcounter{page}{1}
 \hypersetup{pageanchor=true}
 \tableofcontents
 

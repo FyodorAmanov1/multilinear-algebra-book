@@ -1,5 +1,8 @@
 # An Introduction to Multilinear Algebra: The Intuitive Way
 
+
+Get the book here:
+# https://fyodoramanov1.github.io/multilinear-algebra-book/
 A friendly, illustrated, story-driven introduction to multilinear algebra for readers with high-school mathematics.
 
 This repository contains:

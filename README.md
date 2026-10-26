@@ -89,7 +89,7 @@ Inside each chapter, you will find:
 
 The later chapters take the ideas into stress, diffusion, inertia, geometry, and data. The story keeps going as the mathematics grows.
 
-## 🎛️ Don't just read the geometry. Move it.
+## 🎛️ Move the geometry yourself
 
 | Try this question | Open the playground |
 | --- | --- |

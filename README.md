@@ -122,22 +122,106 @@ All twelve demos let you manipulate the diagram directly with a mouse or touch. 
 
 ## 🗺️ Twelve rooms, one journey
 
-![A map of Alice's twelve mathematical rooms, from arrows and keyrings to tensors and differential forms.](assets/figures/story-map.svg)
+Choose a door. Each picture and room name opens its chapter.
 
-| Room | The story | The mathematics |
-| --- | --- | --- |
-| 1 | [Down the Arrow Hole](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/01-vectors/) | Vectors, coordinates, addition, and scaling |
-| 2 | [The Cat's Vanishing Keys](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/02-spaces/) | Spaces, independence, bases, and dimension |
-| 3 | [The Hatter's Tea Machine](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/03-linear-maps/) | Linear maps, matrices, image, and kernel |
-| 4 | [The Caterpillar's Measuring Tape](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/04-inner-products/) | Length, angle, projection, and orthogonality |
-| 5 | [The Queen's Card Square](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/05-determinants/) | Determinants, signed area, and volume |
-| 6 | [Paths That Refuse to Turn](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/06-eigenvectors/) | Eigenvectors, eigenvalues, and repeated transformations |
-| 7 | [The Duchess's Two-Pan Balance](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/07-bilinear-forms/) | Bilinear forms and quadratic forms |
-| 8 | [The Queen's Area Tickets](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/08-wedge-products/) | Wedge products and oriented areas |
-| 9 | [The Mock Turtle's Combination Table](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/09-tensor-products/) | Tensor products and combinations of directions |
-| 10 | [Humpty Dumpty's Word Costumes](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/10-components/) | Components, duality, and changes of basis |
-| 11 | [The White Rabbit's Instrument Bag](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/11-applications/) | Tensors in physical and geometric applications |
-| 12 | [Alice's Dream Map](https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/12-forms/) | Differential forms, local change, and accumulated measurement |
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/01-vectors/">
+        <img src="assets/story/01-vectors.png" width="420" alt="Alice looks up from her book as the White Rabbit hurries through a rainlit library." loading="lazy">
+      </a>
+      <br><strong>Room 1</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/01-vectors/"><strong>Down the Arrow Hole</strong></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/02-spaces/">
+        <img src="assets/story/02-spaces.png" width="420" alt="Alice studies two keys offered by the Cheshire Cat above a garden of curious doors." loading="lazy">
+      </a>
+      <br><strong>Room 2</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/02-spaces/"><strong>The Cat’s Vanishing Keys</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/03-linear-maps/">
+        <img src="assets/story/03-linear-maps.png" width="420" alt="Alice watches the Mad Hatter feed an arrow into his elaborate brass tea machine." loading="lazy">
+      </a>
+      <br><strong>Room 3</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/03-linear-maps/"><strong>The Hatter’s Tea Machine</strong></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/04-inner-products/">
+        <img src="assets/story/04-inner-products.png" width="420" alt="Alice holds two arrows while the Caterpillar offers a luminous measuring tape from his mushroom." loading="lazy">
+      </a>
+      <br><strong>Room 4</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/04-inner-products/"><strong>The Caterpillar’s Measuring Tape</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/05-determinants/">
+        <img src="assets/story/05-determinants.png" width="420" alt="Alice and the Queen of Hearts examine a tilted square made from playing cards." loading="lazy">
+      </a>
+      <br><strong>Room 5</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/05-determinants/"><strong>The Queen’s Card Square</strong></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/06-eigenvectors/">
+        <img src="assets/story/06-eigenvectors.png" width="420" alt="Alice and a sleepy Dormouse watch a cloud of arrows inside a teapot-shaped room." loading="lazy">
+      </a>
+      <br><strong>Room 6</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/06-eigenvectors/"><strong>Paths That Refuse to Turn</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/07-bilinear-forms/">
+        <img src="assets/story/07-bilinear-forms.png" width="420" alt="Alice watches the Duchess place an arrow in each pan of a kitchen balance." loading="lazy">
+      </a>
+      <br><strong>Room 7</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/07-bilinear-forms/"><strong>The Duchess’s Two-Pan Balance</strong></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/08-wedge-products/">
+        <img src="assets/story/08-wedge-products.png" width="420" alt="Alice receives an area ticket from a heart-card soldier in the Queen&#x27;s corridor." loading="lazy">
+      </a>
+      <br><strong>Room 8</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/08-wedge-products/"><strong>The Queen’s Area Tickets</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/09-tensor-products/">
+        <img src="assets/story/09-tensor-products.png" width="420" alt="Alice counts spoons and cups beside the Mock Turtle&#x27;s enormous combination table." loading="lazy">
+      </a>
+      <br><strong>Room 9</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/09-tensor-products/"><strong>The Mock Turtle’s Combination Table</strong></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/10-components/">
+        <img src="assets/story/10-components.png" width="420" alt="Alice watches Humpty Dumpty arrange two costumes for the same little toy soldier." loading="lazy">
+      </a>
+      <br><strong>Room 10</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/10-components/"><strong>Humpty Dumpty’s Word Costumes</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/11-applications/">
+        <img src="assets/story/11-applications.png" width="420" alt="The White Rabbit opens his instrument bag while Alice prepares to take notes." loading="lazy">
+      </a>
+      <br><strong>Room 11</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/11-applications/"><strong>The White Rabbit’s Instrument Bag</strong></a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/12-forms/">
+        <img src="assets/story/12-forms.png" width="420" alt="Alice and the White Rabbit examine maps covered with paths and small arrow markings." loading="lazy">
+      </a>
+      <br><strong>Room 12</strong>
+      <br><a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/12-forms/"><strong>Alice’s Dream Map</strong></a>
+    </td>
+  </tr>
+</table>
 
 ## 🌱 The first story in a bigger series
 

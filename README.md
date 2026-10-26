@@ -123,7 +123,7 @@ The later chapters take the ideas into stress, diffusion, inertia, geometry, and
 
 I'm **Fyodor Amanov**, and this is my first book in a planned series explaining **mathematics and science through stories**.
 
-I'm making the complete first volume free so more people can discover this way of learning. I intend future volumes to be paid releases, with the same emphasis on stories, illustrations, and exploration. Topics and publication dates have not yet been announced.
+I'm making the complete first volume free so more people can discover this way of learning. 
 
 If a picture helped an idea click, tell me. If a passage left you puzzled, tell me that too. And if there is a subject you would love to meet through a story, **[suggest the next journey](https://github.com/FyodorAmanov1/multilinear-algebra-book/issues)**.
 

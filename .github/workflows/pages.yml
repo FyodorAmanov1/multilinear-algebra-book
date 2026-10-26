@@ -16,7 +16,8 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,10 +30,11 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install book build tools
+        timeout-minutes: 7
         run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc texlive-latex-extra texlive-fonts-recommended lmodern
-          python -m pip install -r requirements.txt
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y pandoc texlive-latex-extra texlive-fonts-recommended lmodern
+          python -m pip install --timeout 30 --retries 2 -r requirements.txt
       - name: Build the complete PDF and website
         env:
           MPLBACKEND: Agg
@@ -46,7 +48,8 @@ jobs:
           path: build/public
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

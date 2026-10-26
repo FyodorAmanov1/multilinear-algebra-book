@@ -203,6 +203,8 @@ def control_specs() -> dict[str, list[dict[str, Any]]]:
             {"id": "matrix-b", "label": "b", "min": -3, "max": 3, "step": 0.1, "value": 0},
             {"id": "matrix-c", "label": "c", "min": -3, "max": 3, "step": 0.1, "value": 0},
             {"id": "matrix-d", "label": "d", "min": -3, "max": 3, "step": 0.1, "value": 1},
+            {"id": "point-x", "label": "input point x", "min": -3, "max": 3, "step": 0.1, "value": 1.5},
+            {"id": "point-y", "label": "input point y", "min": -3, "max": 3, "step": 0.1, "value": 1},
         ],
         "inner-product-lab": [
             {"id": "u-angle", "label": "angle of u", "min": 0, "max": 360, "step": 1, "value": 25},
@@ -221,11 +223,17 @@ def control_specs() -> dict[str, list[dict[str, Any]]]:
             {"id": "matrix-d", "label": "d", "min": -2, "max": 2, "step": 0.05, "value": 0.8},
             {"id": "iterations", "label": "iterations", "min": 1, "max": 12, "step": 1, "value": 4},
             {"id": "speed", "label": "speed", "min": 0.1, "max": 3, "step": 0.1, "value": 1},
+            {"id": "matrix-b", "label": "b", "min": -2, "max": 2, "step": 0.05, "value": 0.4},
+            {"id": "matrix-c", "label": "c", "min": -2, "max": 2, "step": 0.05, "value": 0.3},
+            {"id": "probe-x", "label": "starting vector x", "min": -3, "max": 3, "step": 0.1, "value": 1.5},
+            {"id": "probe-y", "label": "starting vector y", "min": -3, "max": 3, "step": 0.1, "value": -1},
         ],
         "bilinear-form-lab": [
             {"id": "form-a", "label": "a", "min": -3, "max": 3, "step": 0.1, "value": 1},
             {"id": "form-b", "label": "b", "min": -2, "max": 2, "step": 0.1, "value": 0.5},
             {"id": "form-c", "label": "c", "min": -3, "max": 3, "step": 0.1, "value": 1},
+            {"id": "probe-x", "label": "test vector x", "min": -3, "max": 3, "step": 0.1, "value": 1.5},
+            {"id": "probe-y", "label": "test vector y", "min": -3, "max": 3, "step": 0.1, "value": -1},
         ],
         "wedge-areas": [
             {"id": "u-angle", "label": "angle of u", "min": 0, "max": 360, "step": 1, "value": 25},
@@ -238,12 +246,14 @@ def control_specs() -> dict[str, list[dict[str, Any]]]:
             {"id": "u-y", "label": "u_y", "min": -3, "max": 3, "step": 0.1, "value": 1},
             {"id": "v-x", "label": "v_x", "min": -3, "max": 3, "step": 0.1, "value": 1},
             {"id": "v-y", "label": "v_y", "min": -3, "max": 3, "step": 0.1, "value": 3},
-            {"id": "basis-size", "label": "basis size", "min": 1, "max": 5, "step": 1, "value": 3},
+            {"id": "basis-size", "label": "basis size", "min": 2, "max": 5, "step": 1, "value": 3},
         ],
         "component-transformer": [
             {"id": "angle", "label": "basis angle", "min": 0, "max": 360, "step": 1, "value": 30},
             {"id": "tensor-type", "label": "type", "type": "select", "options": ["vector", "covector", "bilinear form"]},
-            {"id": "covariance", "label": "index", "type": "select", "options": ["upper", "lower"]},
+            {"id": "covariance", "label": "index notation", "type": "select", "options": ["upper", "lower"]},
+            {"id": "object-x", "label": "object x / first form coefficient", "min": -3, "max": 3, "step": 0.1, "value": 2},
+            {"id": "object-y", "label": "object y / second form coefficient", "min": -3, "max": 3, "step": 0.1, "value": 1},
         ],
         "tensor-applications": [
             {"id": "stress-a", "label": "mean stress", "min": 0, "max": 3, "step": 0.05, "value": 1.5},
@@ -254,6 +264,10 @@ def control_specs() -> dict[str, list[dict[str, Any]]]:
             {"id": "form-a", "label": "dx coefficient", "min": -3, "max": 3, "step": 0.1, "value": 1},
             {"id": "form-b", "label": "dy coefficient", "min": -3, "max": 3, "step": 0.1, "value": 0.5},
             {"id": "show-area", "label": "show area form", "type": "checkbox", "value": True},
+            {"id": "probe-x", "label": "test vector x", "min": -3, "max": 3, "step": 0.1, "value": 1},
+            {"id": "probe-y", "label": "test vector y", "min": -3, "max": 3, "step": 0.1, "value": -1},
+            {"id": "area-x", "label": "patch corner x", "min": -4, "max": 4, "step": 0.1, "value": -0.5},
+            {"id": "area-y", "label": "patch corner y", "min": -4, "max": 4, "step": 0.1, "value": 1},
         ],
     }
 
@@ -279,7 +293,8 @@ def render_controls(specs: list[dict[str, Any]]) -> str:
             )
         else:
             output.append(
-                f'<div class="control"><label for="{control_id}">{label}</label>'
+                f'<div class="control"><label for="{control_id}">{label}'
+                f'<output id="{control_id}-value" for="{control_id}">{spec.get("value", 0)}</output></label>'
                 f'<input type="range" id="{control_id}" min="{spec.get("min", 0)}" '
                 f'max="{spec.get("max", 1)}" step="{spec.get("step", 0.1)}" value="{spec.get("value", 0)}"></div>'
             )

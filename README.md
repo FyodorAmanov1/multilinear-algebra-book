@@ -91,6 +91,8 @@ The later chapters take the ideas into stress, diffusion, inertia, geometry, and
 
 ## 🎛️ Move the geometry yourself
 
+Grab the marked points directly with your mouse or a touch. Every demo supports dragging and click-to-place interaction, with live mathematical readouts and synchronized sliders. Choose an object and use the grid's arrow keys if you prefer the keyboard; reset the example whenever you want a fresh start.
+
 | Try this question | Open the playground |
 | --- | --- |
 | What happens when you add or scale two arrows? | [Vector Playground](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/vector-playground/) |

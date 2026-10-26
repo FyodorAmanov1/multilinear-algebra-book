@@ -681,3 +681,23 @@ a { color: var(--oxford); }
   body { background: #fff; }
   .chapter, .demo-shell { box-shadow: none; border: none; max-width: none; padding: 0; }
 }
+.demo-instructions { padding: .85rem 1rem; border-left: 4px solid var(--teal); border-radius: 0 10px 10px 0; background: #edf6f2; color: var(--oxford); }
+.demo-objects { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0 .5rem; }
+.demo-object { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .85rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--ink); font: inherit; font-size: .88rem; cursor: pointer; }
+.demo-object::before { content: ""; width: .7rem; height: .7rem; border: 2px solid var(--handle-color); border-radius: 50%; background: #fff; }
+.demo-object[aria-pressed="true"] { border-color: var(--handle-color); box-shadow: 0 0 0 1px var(--handle-color); font-weight: 700; }
+.demo-object[aria-pressed="true"]::before { background: var(--handle-color); }
+.demo-object:focus-visible, .demo-actions button:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+.demo-selection { margin: .6rem 0; font-size: .9rem; font-variant-numeric: tabular-nums; color: var(--ink-soft); min-height: 1.5em; }
+.demo-canvas-wrap canvas { display: block; user-select: none; -webkit-user-select: none; }
+.demo-canvas-wrap canvas:focus-visible { outline: 3px solid var(--teal); outline-offset: -4px; }
+.demo-canvas-wrap canvas.is-dragging { cursor: grabbing !important; }
+.demo-values { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .6rem; }
+.demo-value { margin: 0; padding: .65rem .85rem; border-left: 3px solid var(--metric-color, var(--teal)); background: #fff; border-radius: 0 8px 8px 0; color: var(--ink); font-size: .88rem; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.demo-actions { display: flex; gap: .6rem; flex-wrap: wrap; }
+.demo-actions .button { font: inherit; cursor: pointer; }
+.control output { margin-left: .75rem; font-variant-numeric: tabular-nums; color: var(--teal); }
+.demo-product-inspector { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; font-size: .9rem; }
+.demo-product-inspector select { max-width: 100%; padding: .5rem; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); font: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 480px) { .demo-values { grid-template-columns: 1fr; } .demo-object { font-size: .8rem; padding: .5rem .65rem; } }

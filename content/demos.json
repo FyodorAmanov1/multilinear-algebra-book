@@ -3,84 +3,135 @@
     "id": "vector-playground",
     "chapter": 1,
     "title": "Vector Playground",
-    "summary": "Drag two arrows and watch their sum, difference, and scaled relatives appear in real time.",
-    "controls": ["vector-a", "vector-b", "scale"]
+    "summary": "Drag the two vector tips on the grid and watch their sum, difference, and scaled relatives respond.",
+    "controls": [
+      "vector-a",
+      "vector-b",
+      "scale"
+    ]
   },
   {
     "id": "basis-explorer",
     "chapter": 2,
     "title": "Basis Explorer",
-    "summary": "Change a basis and see how the same point gets new coordinates without moving.",
-    "controls": ["basis-vector-a", "basis-vector-b", "point"]
+    "summary": "Drag both basis arrows and a point to discover how coordinates change, and when a pair stops being a basis.",
+    "controls": [
+      "basis-vector-a",
+      "basis-vector-b",
+      "point"
+    ]
   },
   {
     "id": "linear-map-theater",
     "chapter": 3,
     "title": "Linear Map Theater",
-    "summary": "Push a grid through a 2×2 matrix and watch straight lines stay straight.",
-    "controls": ["matrix-a", "matrix-b", "matrix-c", "matrix-d"]
+    "summary": "Drag the matrix columns to reshape a grid, then move an input point and watch its image respond.",
+    "controls": [
+      "matrix-a",
+      "matrix-b",
+      "matrix-c",
+      "matrix-d"
+    ]
   },
   {
     "id": "inner-product-lab",
     "chapter": 4,
     "title": "Inner Product Lab",
-    "summary": "Explore length, angle, projection, and orthogonality with two draggable arrows.",
-    "controls": ["vector-u", "vector-v", "projection"]
+    "summary": "Drag two arrows to explore length, angle, dot products, projection, and orthogonality.",
+    "controls": [
+      "vector-u",
+      "vector-v",
+      "projection"
+    ]
   },
   {
     "id": "determinant-volume",
     "chapter": 5,
     "title": "Determinant Volume",
-    "summary": "See how a matrix stretches, squashes, or flips area and volume.",
-    "controls": ["matrix-a", "matrix-b", "matrix-c", "matrix-d"]
+    "summary": "Drag the column tips to stretch, flatten, or reverse a parallelogram and measure its signed area.",
+    "controls": [
+      "matrix-a",
+      "matrix-b",
+      "matrix-c",
+      "matrix-d"
+    ]
   },
   {
     "id": "eigenvector-dance",
     "chapter": 6,
     "title": "Eigenvector Dance",
-    "summary": "Watch which directions refuse to turn when a matrix acts over and over.",
-    "controls": ["matrix-a", "matrix-d", "iterations", "speed"]
+    "summary": "Drag the matrix columns and a starting vector to discover directions that a transformation preserves.",
+    "controls": [
+      "matrix-a",
+      "matrix-d",
+      "iterations",
+      "speed"
+    ]
   },
   {
     "id": "bilinear-form-lab",
     "chapter": 7,
     "title": "Bilinear Form Lab",
-    "summary": "Play with a symmetric bilinear form and watch its level curves change shape.",
-    "controls": ["form-a", "form-b", "form-c"]
+    "summary": "Move a test vector through a colored quadratic field, and drag the form columns to reshape it.",
+    "controls": [
+      "form-a",
+      "form-b",
+      "form-c"
+    ]
   },
   {
     "id": "wedge-areas",
     "chapter": 8,
     "title": "Wedge Areas",
-    "summary": "Explore oriented parallelograms, cross products, and the first glimpse of exterior algebra.",
-    "controls": ["vector-u", "vector-v", "show-wedge"]
+    "summary": "Drag two arrows to build, collapse, and reverse an oriented parallelogram.",
+    "controls": [
+      "vector-u",
+      "vector-v",
+      "show-wedge"
+    ]
   },
   {
     "id": "tensor-product-builder",
     "chapter": 9,
     "title": "Tensor Product Builder",
-    "summary": "Combine two vectors and see a whole grid of new basis elements appear.",
-    "controls": ["vector-u", "vector-v", "basis-size"]
+    "summary": "Drag two vectors and click the product table to explore how pairs of components become tensor coefficients.",
+    "controls": [
+      "vector-u",
+      "vector-v",
+      "basis-size"
+    ]
   },
   {
     "id": "component-transformer",
     "chapter": 10,
     "title": "Component Transformer",
-    "summary": "Rotate the coordinate frame and watch tensor components change while the geometry stays still.",
-    "controls": ["angle", "tensor-type", "covariance"]
+    "summary": "Turn the basis arrows directly and move the mathematical object to explore its changing components.",
+    "controls": [
+      "angle",
+      "tensor-type",
+      "covariance"
+    ]
   },
   {
     "id": "tensor-applications",
     "chapter": 11,
     "title": "Tensor Applications",
-    "summary": "See a stress ellipsoid and a diffusion field react to changing tensor components.",
-    "controls": ["stress-a", "stress-b", "diffusion-ratio"]
+    "summary": "Drag the principal stress handles and the diffusion control to reshape a tensor and its field.",
+    "controls": [
+      "stress-a",
+      "stress-b",
+      "diffusion-ratio"
+    ]
   },
   {
     "id": "forms-and-fields",
     "chapter": 12,
     "title": "Forms and Fields",
-    "summary": "Move through a plane and watch 1-forms and 2-forms measure directions and areas.",
-    "controls": ["form-a", "form-b", "show-area"]
+    "summary": "Move a 1-form, a test vector, and the corner of an area patch to explore their signed measurements.",
+    "controls": [
+      "form-a",
+      "form-b",
+      "show-area"
+    ]
   }
 ]

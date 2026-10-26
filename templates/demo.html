@@ -32,17 +32,27 @@
       <p class="eyebrow">Interactive demo</p>
       <h1>$title$</h1>
       <p class="demo-summary">$summary$</p>
+      <p class="demo-instructions" id="demo-instructions">Drag a marked point on the grid, or select an object and click where you want it to go.</p>
+      <div class="demo-objects" role="group" aria-label="Choose an object to move"></div>
+      <p class="demo-selection" aria-label="Selected object coordinates"></p>
       <div class="demo-canvas-wrap">
-        <canvas id="$id$" width="720" height="520" aria-label="$summary$" role="img"></canvas>
+        <canvas id="$id$" width="720" height="520" tabindex="0" aria-label="$title$: interactive coordinate grid" aria-describedby="demo-instructions demo-keyboard-help" aria-roledescription="interactive diagram" role="group">Use the controls below to explore this diagram.</canvas>
       </div>
+      <div class="demo-values" role="group" aria-label="Live mathematical values"></div>
+      <div class="demo-extra"></div>
       <div class="demo-toolbar">
-        <button class="button ghost demo-play" type="button" aria-pressed="false">Play animation</button>
+        <div class="demo-actions">
+          <button class="button ghost demo-play" type="button" aria-pressed="false">Play animation</button>
+          <button class="button ghost demo-reset" type="button">Reset example</button>
+        </div>
         <span class="demo-state" aria-live="polite">Paused</span>
       </div>
+      <p class="sr-only demo-announcer" role="status" aria-live="polite" aria-atomic="true"></p>
       <div class="demo-controls">
         $controls$
       </div>
-      <p class="demo-hint">Use the sliders to explore. Keyboard users can tab to each control.</p>
+      <p class="demo-hint" id="demo-keyboard-help">Mouse or touch: drag a ring, or choose an object and click or tap the grid to place it. Keyboard: choose an object, focus the grid, and use the arrow keys. Hold Shift for larger steps; Home resets the example. All sliders and selectors also work with the keyboard.</p>
+      <noscript><p>Enable JavaScript to use the interactive grid. The chapter explains the same ideas with static illustrations.</p></noscript>
       <nav class="chapter-nav" aria-label="Demo">
         <a class="button ghost" href="__BASE_PATH__chapters/$chapter-slug$/">Back to the chapter</a>
       </nav>

@@ -30,96 +30,6 @@ This book follows those questions from **vectors and bases to tensors and differ
 
 **Bring high-school mathematics and curiosity.** Each chapter begins with something concrete; the formal definitions arrive as the ideas take shape.
 
-## ✨ A peek through four of the doors
-
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/01-vectors/">
-        <img src="assets/story/01-vectors.png" width="420" alt="Alice looks up from her book as the White Rabbit hurries through a rainlit library.">
-      </a>
-      <br><strong>Down the Arrow Hole</strong>
-      <br>A hurried rabbit. A garden of arrows. The beginning of vectors.
-    </td>
-    <td width="50%" align="center">
-      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/02-spaces/">
-        <img src="assets/story/02-spaces.png" width="420" alt="Alice studies two keys offered by the Cheshire Cat above a garden of curious doors.">
-      </a>
-      <br><strong>The Cat's Vanishing Keys</strong>
-      <br>A small keyring opens an infinite garden. Meet a basis.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/05-determinants/">
-        <img src="assets/story/05-determinants.png" width="420" alt="Alice and the Queen of Hearts examine a tilted square made from playing cards.">
-      </a>
-      <br><strong>The Queen's Card Square</strong>
-      <br>Stretch it. Flip it. Flatten it. Discover the determinant.
-    </td>
-    <td width="50%" align="center">
-      <a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/09-tensor-products/">
-        <img src="assets/story/09-tensor-products.png" width="420" alt="Alice counts spoons and cups beside the Mock Turtle's enormous combination table.">
-      </a>
-      <br><strong>The Mock Turtle's Combination Table</strong>
-      <br>Every pairing gets a place. A doorway into tensor products.
-    </td>
-  </tr>
-</table>
-
-*Click a picture to enter its chapter. Twelve Victorian-style pen-and-ink scenes accompany the journey.*
-
-## 🧭 Pictures that help the ideas click
-
-An arrow pointing east and an arrow pointing west can have the same length. They still take Alice to different places.
-
-<a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/01-vectors/">
-  <img src="assets/figures/ch01-directions.svg" width="760" alt="A geometric illustration comparing equal-length arrows pointing in opposite directions.">
-</a>
-
-That is how the book starts: **an idea you can picture, followed by mathematics you can work through.**
-
-Inside each chapter, you will find:
-
-- **A story to follow:** Alice meets a new puzzle and a familiar Wonderland companion.
-- **Intuition boxes and Alice's notebook:** plain-language explanations alongside precise definitions.
-- **Worked examples and geometric illustrations:** the pictures use the same examples as the calculations.
-- **An experiment to explore:** a diagram you can drag and click, with QR links in the PDF.
-- **Something to try yourself:** exercises, with hints and answers when you need them.
-
-The later chapters take the ideas into stress, diffusion, inertia, geometry, and data. The story keeps going as the mathematics grows.
-
-## 🎛️ Move the geometry yourself
-
-**Grab an arrow. Move a point. Watch the mathematics respond.**
-
-All twelve demos let you manipulate the diagram directly with a mouse or touch. Drag a colored ring to move a vector or point, or choose an object and click the grid to place it. The geometry, coordinates, and sliders update together.
-
-![The Tensor Product Builder: draggable vector tips on a coordinate grid alongside a clickable table of tensor coefficients.](assets/readme/direct-grid-demo.jpg)
-
-*Two arrows become a table of pairings. Move either arrow, then click a cell to inspect its coefficient.*
-
-| Playground | What you can grab or click |
-| --- | --- |
-| [Vector Playground](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/vector-playground/) | Drag u and v; watch their sum, difference, and scaled vector respond. |
-| [Basis Explorer](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/basis-explorer/) | Move both basis arrows and the point. Bring the directions into line to see when they stop forming a basis. |
-| [Linear Map Theater](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/linear-map-theater/) | Drag the matrix columns to reshape the grid; move an input point to explore its image. |
-| [Inner Product Lab](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/inner-product-lab/) | Move two vector tips to explore angles, dot products, projections, and orthogonality. |
-| [Determinant Volume](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/determinant-volume/) | Drag the columns to stretch, reverse, or collapse a parallelogram and its signed area. |
-| [Eigenvector Dance](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/eigenvector-dance/) | Move the matrix columns and a starting vector; try aligning it with an eigenvector direction. |
-| [Bilinear Form Lab](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/bilinear-form-lab/) | Drag a test vector through the colored field, or reshape the form through its column handles. |
-| [Wedge Areas](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/wedge-areas/) | Move the arrows to build an oriented area, flatten it, or reverse its orientation. |
-| [Tensor Product Builder](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/tensor-product-builder/) | Drag both factors and click the product table to inspect individual coefficients. |
-| [Component Transformer](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/component-transformer/) | Turn the basis arrows around the origin and move the object to explore its changing components. |
-| [Tensor Applications](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/tensor-applications/) | Drag the principal stress handles and the diffusion control to reshape the tensor and its field. |
-| [Forms and Fields](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/forms-and-fields/) | Move a 1-form, its test vector, and an area-patch corner to explore signed measurements. |
-
-**Your playground, your pace.** Use **Play animation** to follow the motion or **Reset example** to return to the starting picture. Frame handles rotate around the origin; stress handles follow their diagonal axes.
-
-**Keyboard explorers are welcome:** choose an object, focus the grid, and use the arrow keys. Hold **Shift** for larger steps or press **Home** to reset. Sliders, selectors, and the product-coefficient inspector also work with the keyboard.
-
-**[Enter the twelve interactive playgrounds](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/)**
-
 ## 🗺️ Twelve rooms, one journey
 
 Choose a door. Each picture and room name opens its chapter.
@@ -222,6 +132,57 @@ Choose a door. Each picture and room name opens its chapter.
     </td>
   </tr>
 </table>
+
+## 🧭 Pictures that help the ideas click
+
+An arrow pointing east and an arrow pointing west can have the same length. They still take Alice to different places.
+
+<a href="https://fyodoramanov1.github.io/multilinear-algebra-book/chapters/01-vectors/">
+  <img src="assets/figures/ch01-directions.svg" width="760" alt="A geometric illustration comparing equal-length arrows pointing in opposite directions.">
+</a>
+
+That is how the book starts: **an idea you can picture, followed by mathematics you can work through.**
+
+Inside each chapter, you will find:
+
+- **A story to follow:** Alice meets a new puzzle and a familiar Wonderland companion.
+- **Intuition boxes and Alice's notebook:** plain-language explanations alongside precise definitions.
+- **Worked examples and geometric illustrations:** the pictures use the same examples as the calculations.
+- **An experiment to explore:** a diagram you can drag and click, with QR links in the PDF.
+- **Something to try yourself:** exercises, with hints and answers when you need them.
+
+The later chapters take the ideas into stress, diffusion, inertia, geometry, and data. The story keeps going as the mathematics grows.
+
+## 🎛️ Move the geometry yourself
+
+**Grab an arrow. Move a point. Watch the mathematics respond.**
+
+All twelve demos let you manipulate the diagram directly with a mouse or touch. Drag a colored ring to move a vector or point, or choose an object and click the grid to place it. The geometry, coordinates, and sliders update together.
+
+![The Tensor Product Builder: draggable vector tips on a coordinate grid alongside a clickable table of tensor coefficients.](assets/readme/direct-grid-demo.jpg)
+
+*Two arrows become a table of pairings. Move either arrow, then click a cell to inspect its coefficient.*
+
+| Playground | What you can grab or click |
+| --- | --- |
+| [Vector Playground](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/vector-playground/) | Drag u and v; watch their sum, difference, and scaled vector respond. |
+| [Basis Explorer](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/basis-explorer/) | Move both basis arrows and the point. Bring the directions into line to see when they stop forming a basis. |
+| [Linear Map Theater](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/linear-map-theater/) | Drag the matrix columns to reshape the grid; move an input point to explore its image. |
+| [Inner Product Lab](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/inner-product-lab/) | Move two vector tips to explore angles, dot products, projections, and orthogonality. |
+| [Determinant Volume](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/determinant-volume/) | Drag the columns to stretch, reverse, or collapse a parallelogram and its signed area. |
+| [Eigenvector Dance](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/eigenvector-dance/) | Move the matrix columns and a starting vector; try aligning it with an eigenvector direction. |
+| [Bilinear Form Lab](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/bilinear-form-lab/) | Drag a test vector through the colored field, or reshape the form through its column handles. |
+| [Wedge Areas](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/wedge-areas/) | Move the arrows to build an oriented area, flatten it, or reverse its orientation. |
+| [Tensor Product Builder](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/tensor-product-builder/) | Drag both factors and click the product table to inspect individual coefficients. |
+| [Component Transformer](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/component-transformer/) | Turn the basis arrows around the origin and move the object to explore its changing components. |
+| [Tensor Applications](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/tensor-applications/) | Drag the principal stress handles and the diffusion control to reshape the tensor and its field. |
+| [Forms and Fields](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/forms-and-fields/) | Move a 1-form, its test vector, and an area-patch corner to explore signed measurements. |
+
+**Your playground, your pace.** Use **Play animation** to follow the motion or **Reset example** to return to the starting picture. Frame handles rotate around the origin; stress handles follow their diagonal axes.
+
+**Keyboard explorers are welcome:** choose an object, focus the grid, and use the arrow keys. Hold **Shift** for larger steps or press **Home** to reset. Sliders, selectors, and the product-coefficient inspector also work with the keyboard.
+
+**[Enter the twelve interactive playgrounds](https://fyodoramanov1.github.io/multilinear-algebra-book/demos/)**
 
 ## 🌱 The first story in a bigger series
 
